@@ -20,7 +20,7 @@ class TestGenerate:
         assert (out / "lib.typ").exists()
         assert (out / "typst.toml").exists()
         assert (out / "form.typ").exists()
-        assert (out / "example.typ").exists()
+        assert (out / "out" / "example.typ").exists()
         assert (out / "page1.png").exists()
 
     def test_default_name_from_out_basename(self, sample_pdf: Path, tmp_path: Path):
