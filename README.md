@@ -1,6 +1,8 @@
 # formalizer
 
-Convert a fillable PDF into a self-contained [Typst](https://typst.app) package that anyone can edit and compile to a pixel-perfect replica.
+Convert a fillable PDF into a self-contained [Typst](https://typst.app) package that anyone can edit and compile to a near-perfect replica.
+
+Maintained by [TtQ](https://tonguetoquill.com).
 
 ## How it works
 
