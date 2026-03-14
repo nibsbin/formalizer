@@ -428,3 +428,57 @@ class TestMixedFields:
 """)
         blank_pdf = compile_typst(tmp_dir, "blank.typ")
         assert pdf.stat().st_size > blank_pdf.stat().st_size
+
+
+# ---------------------------------------------------------------------------
+# Test: shrink-to-fit text overflow
+# ---------------------------------------------------------------------------
+
+class TestShrinkToFit:
+    def test_long_text_value_compiles_and_renders(self, tmp_dir: Path):
+        """Long text in a narrow field should shrink to fit and still compile."""
+        write_schema(tmp_dir, [{"width": 200, "height": 100}], [
+            {"name": "narrow", "type": "text", "bbox": [10, 10, 70, 30], "page": 1, "options": None},
+        ])
+        write_bg(tmp_dir, "bg.png", 200, 100)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (narrow: "This is a very long string that would overflow the field"),
+)
+""")
+        pdf = compile_typst(tmp_dir, "test.typ")
+        assert _pdf_page_count(pdf) == 1
+
+        # Blank form for comparison
+        _write_typ(tmp_dir, "blank.typ", """\
+#import "lib.typ": render-form
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+)
+""")
+        blank_pdf = compile_typst(tmp_dir, "blank.typ")
+        assert pdf.stat().st_size > blank_pdf.stat().st_size
+
+    def test_combobox_long_label_compiles(self, tmp_dir: Path):
+        """Long display label in a narrow combobox should shrink to fit and compile."""
+        write_schema(tmp_dir, [{"width": 200, "height": 100}], [
+            {"name": "dd", "type": "combobox", "bbox": [10, 10, 70, 30], "page": 1,
+             "options": [["x", "A very long display label that exceeds the field width"]]},
+        ])
+        write_bg(tmp_dir, "bg.png", 200, 100)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (dd: "x"),
+)
+""")
+        pdf = compile_typst(tmp_dir, "test.typ")
+        assert _pdf_page_count(pdf) == 1

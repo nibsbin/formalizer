@@ -11,12 +11,19 @@
 #let render-field(field-type, value, width, height, field) = {
   if field-type == "text" {
     if value != none and str(value) != "" {
-      box(
-        width: width,
-        height: height,
-        clip: true,
-        align(left + horizon, text(size: height * 0.6, str(value)))
-      )
+      context {
+        let default-size = height * 0.6
+        let min-size = 6pt
+        let m = measure(text(size: default-size, str(value)))
+        let scale = calc.min(1.0, width / m.width)
+        let final-size = calc.max(min-size, default-size * scale)
+        box(
+          width: width,
+          height: height,
+          clip: true,
+          align(left + horizon, text(size: final-size, str(value)))
+        )
+      }
     }
   } else if field-type == "checkbox" {
     if value == true {
@@ -48,12 +55,19 @@
       }
     }
     if display != "" {
-      box(
-        width: width,
-        height: height,
-        clip: true,
-        align(left + horizon, text(size: height * 0.6, display))
-      )
+      context {
+        let default-size = height * 0.6
+        let min-size = 6pt
+        let m = measure(text(size: default-size, display))
+        let scale = calc.min(1.0, width / m.width)
+        let final-size = calc.max(min-size, default-size * scale)
+        box(
+          width: width,
+          height: height,
+          clip: true,
+          align(left + horizon, text(size: final-size, display))
+        )
+      }
     }
   }
 }
