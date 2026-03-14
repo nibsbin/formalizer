@@ -313,7 +313,7 @@ class TestMultiPage:
 
 class TestCapitalizedTypes:
     def test_text_capitalised(self, tmp_dir: Path):
-        """Ensure ``lower()`` normalisation handles PyMuPDF's 'Text'."""
+        """Ensure ``lower()`` normalization handles PyMuPDF's 'Text'."""
         write_schema(tmp_dir, [{"width": 300, "height": 100}], [
             {"name": "name", "type": "Text", "bbox": [10, 10, 290, 40], "page": 1, "options": None},
         ])

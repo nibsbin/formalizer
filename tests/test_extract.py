@@ -44,7 +44,7 @@ class TestExtract:
             assert f["page"] >= 1
 
     def test_field_types_normalized(self, sample_pdf: Path, tmp_path: Path):
-        """PyMuPDF types like 'CheckBox' should be normalised to 'checkbox'."""
+        """PyMuPDF types like 'CheckBox' should be normalized to 'checkbox'."""
         schema = extract(sample_pdf, tmp_path)
         valid_types = {"text", "checkbox", "radio", "combobox", "listbox"}
         for f in schema["fields"]:
