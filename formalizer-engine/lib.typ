@@ -123,21 +123,25 @@
     rgb(128, 128, 128)
   }
 
-  let label = name + " [" + field-type + "]"
+  // Insert zero-width spaces after _ and - so the label can wrap
+  let breakable-name = name.replace("_", "_\u{200B}").replace("-", "-\u{200B}")
+  let label = breakable-name + " [" + field-type + "]"
 
   box(width: width, height: height, {
     // Semi-transparent colored background
     rect(width: 100%, height: 100%, fill: color, stroke: 0.5pt + stroke-color)
-    // Label pill in top-left
+    // Label in top-left — uses block so text wraps within field width
     place(
       top + left,
       dx: 1pt,
       dy: 1pt,
-      box(
+      block(
+        width: calc.max(width - 2pt, 10pt),
         fill: white,
         inset: (x: 2pt, y: 1pt),
         radius: 2pt,
         stroke: 0.3pt + stroke-color,
+        breakable: false,
         text(size: 5pt, fill: stroke-color, weight: "bold", label),
       ),
     )
