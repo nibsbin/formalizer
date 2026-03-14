@@ -482,3 +482,77 @@ class TestShrinkToFit:
 """)
         pdf = compile_typst(tmp_dir, "test.typ")
         assert _pdf_page_count(pdf) == 1
+
+
+# ---------------------------------------------------------------------------
+# Test: debug overlay mode
+# ---------------------------------------------------------------------------
+
+class TestDebugOverlay:
+    def test_debug_compiles(self, tmp_dir: Path):
+        """debug: true should compile without errors."""
+        write_schema(tmp_dir, [{"width": 300, "height": 100}], [
+            {"name": "greeting", "type": "text", "bbox": [10, 10, 290, 40], "page": 1, "options": None},
+        ])
+        write_bg(tmp_dir, "bg.png", 300, 100)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (greeting: "Hello World"),
+  debug: true,
+)
+""")
+        pdf = compile_typst(tmp_dir, "test.typ")
+        assert _pdf_page_count(pdf) == 1
+
+    def test_debug_all_field_types(self, tmp_dir: Path):
+        """debug: true should work with all supported field types."""
+        write_schema(tmp_dir, [{"width": 400, "height": 400}], [
+            {"name": "fname", "type": "text", "bbox": [10, 10, 200, 30], "page": 1, "options": None},
+            {"name": "agree", "type": "checkbox", "bbox": [10, 40, 30, 60], "page": 1, "options": None},
+            {"name": "opt", "type": "radio", "bbox": [10, 70, 30, 90], "page": 1, "options": None},
+            {"name": "opt", "type": "radio", "bbox": [40, 70, 60, 90], "page": 1, "options": None},
+            {"name": "dd", "type": "combobox", "bbox": [10, 100, 200, 120], "page": 1,
+             "options": [["x", "Choice X"], ["y", "Choice Y"]]},
+            {"name": "lb", "type": "listbox", "bbox": [10, 130, 200, 150], "page": 1,
+             "options": [["1", "One"], ["2", "Two"]]},
+        ])
+        write_bg(tmp_dir, "bg.png", 400, 400)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (
+    fname: "Jane",
+    agree: true,
+    opt: "0",
+    dd: "y",
+    lb: "2",
+  ),
+  debug: true,
+)
+""")
+        pdf = compile_typst(tmp_dir, "test.typ")
+        assert _pdf_page_count(pdf) == 1
+        # Debug PDF should be larger than a non-debug one (overlays add content)
+        _write_typ(tmp_dir, "nodebug.typ", """\
+#import "lib.typ": render-form
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (
+    fname: "Jane",
+    agree: true,
+    opt: "0",
+    dd: "y",
+    lb: "2",
+  ),
+)
+""")
+        nodebug_pdf = compile_typst(tmp_dir, "nodebug.typ")
+        assert pdf.stat().st_size > nodebug_pdf.stat().st_size

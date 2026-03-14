@@ -58,6 +58,23 @@ class TestCodegen:
         assert (tmp_path / "typst.toml").exists()
         assert (tmp_path / "form.typ").exists()
         assert (tmp_path / "example.typ").exists()
+        assert (tmp_path / "debug.typ").exists()
+
+    def test_form_typ_has_debug_param(self, tmp_path: Path):
+        schema = _minimal_schema()
+        (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
+        codegen(schema, tmp_path, "pkg")
+        form = (tmp_path / "form.typ").read_text()
+        assert "debug: false" in form
+        assert "debug: debug" in form
+
+    def test_debug_typ_has_debug_true(self, tmp_path: Path):
+        schema = _minimal_schema()
+        (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
+        codegen(schema, tmp_path, "pkg")
+        debug = (tmp_path / "debug.typ").read_text()
+        assert "debug: true" in debug
+        assert '#import "form.typ": form' in debug
 
     def test_typst_toml_name(self, tmp_path: Path):
         schema = _minimal_schema()
@@ -248,3 +265,22 @@ class TestCodegenCompiles:
         )
         assert result.returncode == 0, f"typst compile failed:\n{result.stderr}"
         assert (tmp_path / "example.pdf").exists()
+
+    def test_generated_debug_compiles(self, tmp_path: Path):
+        from formalizer.extract import extract
+
+        pdf = Path(__file__).resolve().parent.parent / "designs" / "reference" / "example" / "all_fields_sample.pdf"
+        if not pdf.exists():
+            pytest.skip("sample PDF not found")
+
+        schema = extract(pdf, tmp_path)
+        codegen(schema, tmp_path, "test-pkg")
+
+        result = subprocess.run(
+            ["typst", "compile", "debug.typ", "debug.pdf"],
+            cwd=tmp_path,
+            capture_output=True,
+            text=True,
+        )
+        assert result.returncode == 0, f"typst compile debug.typ failed:\n{result.stderr}"
+        assert (tmp_path / "debug.pdf").exists()

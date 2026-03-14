@@ -88,12 +88,69 @@
   str(index-in-group) == str(group-value)
 }
 
+/// Draw a debug overlay rectangle with a label for a field.
+///
+/// - field-type (str): normalised lowercase type
+/// - name (str): field name
+/// - width (length): field width
+/// - height (length): field height
+#let debug-overlay(field-type, name, width, height) = {
+  let color = if field-type == "text" {
+    rgb(0, 0, 255, 40%)
+  } else if field-type == "checkbox" {
+    rgb(0, 128, 0, 40%)
+  } else if field-type == "radio" {
+    rgb(255, 165, 0, 40%)
+  } else if field-type == "combobox" {
+    rgb(128, 0, 128, 40%)
+  } else if field-type == "listbox" {
+    rgb(0, 128, 128, 40%)
+  } else {
+    rgb(128, 128, 128, 40%)
+  }
+
+  let stroke-color = if field-type == "text" {
+    rgb(0, 0, 255)
+  } else if field-type == "checkbox" {
+    rgb(0, 128, 0)
+  } else if field-type == "radio" {
+    rgb(255, 165, 0)
+  } else if field-type == "combobox" {
+    rgb(128, 0, 128)
+  } else if field-type == "listbox" {
+    rgb(0, 128, 128)
+  } else {
+    rgb(128, 128, 128)
+  }
+
+  let label = name + " [" + field-type + "]"
+
+  box(width: width, height: height, {
+    // Semi-transparent colored background
+    rect(width: 100%, height: 100%, fill: color, stroke: 0.5pt + stroke-color)
+    // Label pill in top-left
+    place(
+      top + left,
+      dx: 1pt,
+      dy: 1pt,
+      box(
+        fill: white,
+        inset: (x: 2pt, y: 1pt),
+        radius: 2pt,
+        stroke: 0.3pt + stroke-color,
+        text(size: 5pt, fill: stroke-color, weight: "bold", label),
+      ),
+    )
+  })
+}
+
 /// Main entry point.
 ///
 /// - schema (dictionary): result of `json("FIELDS.json")`
 /// - backgrounds (array): list of image paths / bytes, one per page
 /// - values (dictionary): field name → value; omit to render blank
-#let render-form(schema: none, backgrounds: (), values: (:)) = {
+/// - debug (bool): when true, draw colored overlays on each field
+#let render-form(schema: none, backgrounds: (), values: (:), debug: false) = {
   assert(schema != none, message: "render-form: `schema` is required")
   assert(backgrounds.len() > 0, message: "render-form: `backgrounds` is required")
   let pages = schema.pages
@@ -142,6 +199,15 @@
           dy: y,
           render-field(field-type, val, w, h, field),
         )
+
+        if debug {
+          place(
+            top + left,
+            dx: x,
+            dy: y,
+            debug-overlay(field-type, field.name, w, h),
+          )
+        }
 
         // Zero-width fence to break PDF viewer text-selection grouping
         place(top + left, dx: x, dy: y, text(size: 0.001pt, "\u{FEFF}"))

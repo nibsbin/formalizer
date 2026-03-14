@@ -69,3 +69,16 @@ class TestCLI:
         out = tmp_path / "direct"
         main(["--pdf", str(sample_pdf), "--out", str(out)])
         assert (out / "FIELDS.json").exists()
+
+    def test_debug_pdf_produced(self, sample_pdf: Path, tmp_path: Path):
+        """CLI should produce both example.pdf and debug.pdf."""
+        out = tmp_path / "cli-debug"
+        result = subprocess.run(
+            [sys.executable, "-m", "formalizer.cli",
+             "--pdf", str(sample_pdf), "--out", str(out)],
+            capture_output=True,
+            text=True,
+        )
+        assert result.returncode == 0
+        assert (out / "example.pdf").exists()
+        assert (out / "debug.pdf").exists()

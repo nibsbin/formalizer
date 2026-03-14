@@ -171,10 +171,11 @@ def codegen(schema: dict, out: Path, name: str) -> None:
     form_typ = (
         '// form.typ (generated — do not edit)\n'
         '#import "lib.typ": render-form\n\n'
-        f"#let form(\n{params_block}\n) = render-form(\n"
+        f"#let form(\n  debug: false,\n{params_block}\n) = render-form(\n"
         f'  schema: json("FIELDS.json"),\n'
         f"  backgrounds: ({bg_list},),\n"
-        f"  values: (\n{values_block},\n  ),\n)\n"
+        f"  values: (\n{values_block},\n  ),\n"
+        f"  debug: debug,\n)\n"
     )
     (out / "form.typ").write_text(form_typ)
 
@@ -199,3 +200,15 @@ def codegen(schema: dict, out: Path, name: str) -> None:
         example_typ += "#form()\n"
 
     (out / "example.typ").write_text(example_typ)
+
+    # --- debug.typ ---
+    debug_typ = (
+        "// debug.typ (generated — renders form with debug overlays)\n"
+        '#import "form.typ": form\n\n'
+    )
+    if args_block:
+        debug_typ += f"#form(\n  debug: true,\n{args_block},\n)\n"
+    else:
+        debug_typ += "#form(debug: true)\n"
+
+    (out / "debug.typ").write_text(debug_typ)
