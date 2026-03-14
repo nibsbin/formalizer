@@ -1,15 +1,15 @@
 # Formalizer Engine Design Doc
 
-A publishable Typst package that renders pixel-perfect PDF form replicas from a PyMuPDF-extracted schema.
+A Typst rendering engine that produces pixel-perfect PDF form replicas from a PyMuPDF-extracted schema.
 
 ## Layers
 
 | Layer | Responsibility |
 |---|---|
-| **Orchestration** (separate project) | PyMuPDF → `FIELDS.json`, PDF → page PNGs, codegen of `copied-form.typ` |
-| **This package** | Rendering engine: schema + values dict → overlaid form |
-| **Generated `copied-form.typ`** | Named-parameter function wrapping the package |
-| **End user** | Calls `#form(first_name: "John", agree_terms: true)` |
+| **Orchestration** (separate project) | PyMuPDF → `FIELDS.json`, PDF → page PNGs, codegen of output package |
+| **This engine (`lib.typ`)** | Rendering engine: schema + values dict → overlaid form |
+| **Generated `form.typ`** | Named-parameter API wrapper (do not edit) |
+| **`example.typ`** | User-editable template with dummy values |
 
 
 ## Package API
@@ -30,12 +30,16 @@ A publishable Typst package that renders pixel-perfect PDF form replicas from a 
 4. Field widgets are transparent overlays (no chrome); PNG provides visual styling
 5. A zero-width no-break space (`U+FEFF`) fence is placed at each field origin to prevent PDF viewer text-selection grouping across fields
 
-## Generated `copied-form.typ`
+## Generated output package
 
-Orchestration codegens this once from `FIELDS.json`. End users edit it to fill the form.
+Orchestration codegens two files from `FIELDS.json`:
+
+- **`form.typ`** — API wrapper with named parameters (do not edit)
+- **`example.typ`** — editable template pre-filled with dummy values
 
 ```typst
-#import "@preview/formalizer:0.1.0": render-form
+// form.typ (generated — do not edit)
+#import "lib.typ": render-form
 
 #let form(
   first_name:  "",      // text
@@ -50,9 +54,9 @@ Orchestration codegens this once from `FIELDS.json`. End users edit it to fill t
 )
 ```
 
-End user:
 ```typst
-#import "copied-form.typ": form
+// example.typ (edit this file to fill the form)
+#import "form.typ": form
 #form(first_name: "John", agree_terms: true)
 ```
 

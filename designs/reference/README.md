@@ -1,6 +1,6 @@
 # formalizer-engine
 
-A Typst package that renders pixel-perfect PDF form replicas from a PyMuPDF-extracted schema. Overlay filled-in field values onto rasterized page backgrounds — no AcroForm interaction required.
+A Typst rendering engine that produces pixel-perfect PDF form replicas from a PyMuPDF-extracted schema. Overlay filled-in field values onto rasterized page backgrounds — no AcroForm interaction required.
 
 ## How it works
 
@@ -8,27 +8,22 @@ The system has four layers:
 
 | Layer | Responsibility |
 |---|---|
-| **Orchestration** (separate project) | PyMuPDF → `FIELDS.json`, PDF → page PNGs, codegen of `copied-form.typ` |
-| **This package** | Rendering engine: schema + values dict → overlaid form |
-| **Generated `copied-form.typ`** | Named-parameter function wrapping the package |
-| **End user** | Calls `#form(first_name: "John", agree_terms: true)` |
+| **Orchestration** (separate project) | PyMuPDF → `FIELDS.json`, PDF → page PNGs, codegen of output package |
+| **This engine (`lib.typ`)** | Rendering engine: schema + values dict → overlaid form |
+| **Generated `form.typ`** | Named-parameter API wrapper (do not edit) |
+| **`example.typ`** | User-editable template with dummy values |
 
-The orchestration layer (not part of this package) uses PyMuPDF to:
+The orchestration layer (not part of this engine) uses PyMuPDF to:
 1. Extract field geometry into `FIELDS.json`
 2. Rasterize each PDF page to a PNG background
-3. Codegen a `copied-form.typ` wrapper with named parameters
+3. Copy `lib.typ` into the output package
+4. Codegen `form.typ` (API wrapper) and `example.typ` (editable template)
 
-The end user then fills in the form by editing `copied-form.typ`.
+The end user then fills in the form by editing `example.typ`.
 
 ## Installation
 
-Import from the Typst preview registry:
-
-```typst
-#import "@preview/formalizer:0.1.0": render-form
-```
-
-Or copy `lib.typ` alongside your project and import directly:
+The orchestration layer copies `lib.typ` directly into the output package — no registry install needed.
 
 ```typst
 #import "lib.typ": render-form
@@ -39,7 +34,7 @@ Or copy `lib.typ` alongside your project and import directly:
 ### Direct API
 
 ```typst
-#import "@preview/formalizer:0.1.0": render-form
+#import "lib.typ": render-form
 
 #render-form(
   schema: json("FIELDS.json"),
@@ -63,13 +58,16 @@ Omit `values` to render a blank form:
 )
 ```
 
-### Via generated `copied-form.typ`
+### Via generated package
 
-The orchestration layer codegens `copied-form.typ` once from `FIELDS.json`. End users edit it to fill the form:
+The orchestration layer generates two files from `FIELDS.json`:
+
+- **`form.typ`** — API wrapper with named parameters (do not edit)
+- **`example.typ`** — editable template pre-filled with dummy values
 
 ```typst
-// copied-form.typ (generated, then edited by the end user)
-#import "@preview/formalizer:0.1.0": render-form
+// form.typ (generated — do not edit)
+#import "lib.typ": render-form
 
 #let form(
   first_name:  "",      // text
@@ -85,8 +83,8 @@ The orchestration layer codegens `copied-form.typ` once from `FIELDS.json`. End 
 ```
 
 ```typst
-// main.typ (end user)
-#import "copied-form.typ": form
+// example.typ (edit this file to fill the form)
+#import "form.typ": form
 
 #form(first_name: "John", agree_terms: true)
 ```
