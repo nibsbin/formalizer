@@ -15,9 +15,9 @@ Given a fillable PDF, produce a portable Typst package that a user can edit to f
 | **Codegen** | formalizer orchestrator | `FIELDS.json`, `pageN.png`, `lib.typ`, `copied-form.typ` |
 | **Output** | Self-contained Typst package | User edits and compiles with `typst compile` |
 
-## typst-formalizer Integration
+## formalizer-engine Integration
 
-[typst-formalizer](https://github.com/nibsbin/typst-formalizer) is the rendering engine. It lives as a submodule at `designs/reference/` during development. At codegen time, its `lib.typ` is **copied** into the generated package so the output is fully self-contained — no Typst registry access or network required.
+[formalizer-engine](https://github.com/nibsbin/formalizer-engine) is the rendering engine. It lives as a submodule at `designs/reference/` during development. At codegen time, its `lib.typ` is **copied** into the generated package so the output is fully self-contained — no Typst registry access or network required.
 
 ## Workflow
 
@@ -62,7 +62,7 @@ The orchestrator writes a self-contained Typst package directly into `--out`:
 ```
 <out>/
   typst.toml      # package manifest
-  lib.typ         # rendering engine (copied from typst-formalizer)
+  lib.typ         # rendering engine (copied from formalizer-engine)
   FIELDS.json     # extracted field schema
   page1.png       # page backgrounds
   form.typ        # generated API wrapper (do not edit)
