@@ -62,3 +62,7 @@ def main(argv: list[str] | None = None) -> None:
             print(f"  ⚠ typst compile failed: {result.stderr.strip()}", file=sys.stderr)
     else:
         print(f"✓ Package generated in {out}")
+
+
+if __name__ == "__main__":
+    main()

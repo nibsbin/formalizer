@@ -39,12 +39,15 @@ def extract(pdf: str | Path, out: Path) -> dict:
             if mapped is None:
                 continue  # skip unsupported types (e.g. push buttons)
 
+            raw_opts = widget.choice_values
+            options = [list(pair) for pair in raw_opts] if raw_opts else None
+
             field: dict = {
                 "name": widget.field_name,
                 "type": mapped,
                 "bbox": list(widget.rect),
                 "page": page.number + 1,
-                "options": widget.choice_values or None,
+                "options": options,
             }
 
             # Radio buttons: try to capture export value
