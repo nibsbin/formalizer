@@ -58,24 +58,6 @@
   }
 }
 
-/// Build a lookup that maps each radio-group name to an array of field
-/// entries belonging to that group, preserving schema order.
-#let build-radio-groups(fields) = {
-  let groups = (:)
-  for f in fields {
-    let ft = lower(f.type)
-    if ft == "radio" {
-      let name = f.name
-      if name in groups {
-        groups.at(name).push(f)
-      } else {
-        groups.insert(name, (f,))
-      }
-    }
-  }
-  groups
-}
-
 /// Determine whether a single radio button should appear selected.
 ///
 /// Strategy:
@@ -103,8 +85,6 @@
   let pages = schema.pages
   let fields = schema.fields
 
-  // Pre-compute radio groups for selection logic
-  let radio-groups = build-radio-groups(fields)
   // Track how many radio buttons we have seen per group so far
   let radio-counters = (:)
 
