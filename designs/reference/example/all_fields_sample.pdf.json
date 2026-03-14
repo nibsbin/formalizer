@@ -7,24 +7,8 @@
   ],
   "fields": [
     {
-      "name": "Push Button0",
-      "type": "Button",
-      "bbox": [
-        178.30799865722656,
-        111.6090087890625,
-        259.60198974609375,
-        142.67498779296875
-      ],
-      "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 65536,
-      "options": null,
-      "max_len": 0
-    },
-    {
       "name": "Check Box0",
-      "type": "CheckBox",
+      "type": "checkbox",
       "bbox": [
         206.30099487304688,
         179.11102294921875,
@@ -32,15 +16,11 @@
         207.49200439453125
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "Radio Button0",
-      "type": "RadioButton",
+      "type": "radio",
       "bbox": [
         181.75900268554688,
         260.80401611328125,
@@ -48,15 +28,12 @@
         281.89801025390625
       ],
       "page": 1,
-      "label": null,
-      "value": "Off",
-      "flags": 32768,
       "options": null,
-      "max_len": 0
+      "export_value": "Yes"
     },
     {
       "name": "Combo Box0",
-      "type": "ComboBox",
+      "type": "combobox",
       "bbox": [
         163.73699951171875,
         339.81201171875,
@@ -64,9 +41,6 @@
         393.8909912109375
       ],
       "page": 1,
-      "label": null,
-      "value": "111",
-      "flags": 4587520,
       "options": [
         [
           "111",
@@ -80,12 +54,11 @@
           "333",
           "3"
         ]
-      ],
-      "max_len": 0
+      ]
     },
     {
       "name": "List Box0",
-      "type": "ListBox",
+      "type": "listbox",
       "bbox": [
         167.18800354003906,
         456.4070129394531,
@@ -93,9 +66,6 @@
         499.3630065917969
       ],
       "page": 1,
-      "label": null,
-      "value": "fff",
-      "flags": 4194304,
       "options": [
         [
           "aaa",
@@ -113,12 +83,11 @@
           "fff",
           "f"
         ]
-      ],
-      "max_len": 0
+      ]
     },
     {
       "name": "List Box1",
-      "type": "ListBox",
+      "type": "listbox",
       "bbox": [
         167.9550018310547,
         533.114013671875,
@@ -126,9 +95,6 @@
         576.0700073242188
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 6291456,
       "options": [
         [
           "mm11",
@@ -146,12 +112,11 @@
           "mm44",
           "m4"
         ]
-      ],
-      "max_len": 0
+      ]
     },
     {
       "name": "Text Field0",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         171.78900146484375,
         635.9010009765625,
@@ -159,11 +124,7 @@
         684.6099853515625
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     }
   ]
 }
