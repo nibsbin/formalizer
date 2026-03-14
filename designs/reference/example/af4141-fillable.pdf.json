@@ -12,7 +12,7 @@
   "fields": [
     {
       "name": "commonforms_text_p1_1",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         378.0,
         46.0,
@@ -20,15 +20,11 @@
         84.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_2",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         536.0,
         45.0,
@@ -36,15 +32,11 @@
         84.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_3",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         680.0,
         45.0,
@@ -52,15 +44,11 @@
         84.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_4",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         121.0,
@@ -68,15 +56,11 @@
         146.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_5",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         121.0,
@@ -84,15 +68,11 @@
         146.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_6",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         121.0,
@@ -100,15 +80,11 @@
         146.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_7",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         121.0,
@@ -116,15 +92,11 @@
         146.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_8",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         121.0,
@@ -132,15 +104,11 @@
         146.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_9",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         121.0,
@@ -148,15 +116,11 @@
         146.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_10",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         121.0,
@@ -164,15 +128,11 @@
         146.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_11",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         147.0,
@@ -180,15 +140,11 @@
         172.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_12",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         147.0,
@@ -196,15 +152,11 @@
         172.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_13",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         147.0,
@@ -212,15 +164,11 @@
         172.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_14",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         147.0,
@@ -228,15 +176,11 @@
         172.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_15",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         147.0,
@@ -244,15 +188,11 @@
         172.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_16",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         147.0,
@@ -260,15 +200,11 @@
         172.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_17",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         147.0,
@@ -276,15 +212,11 @@
         172.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_18",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         173.0,
@@ -292,15 +224,11 @@
         198.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_19",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         173.0,
@@ -308,15 +236,11 @@
         199.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_20",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         173.0,
@@ -324,15 +248,11 @@
         198.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_21",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         173.0,
@@ -340,15 +260,11 @@
         198.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_22",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         173.0,
@@ -356,15 +272,11 @@
         198.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_23",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         173.0,
@@ -372,15 +284,11 @@
         198.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_24",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         173.0,
@@ -388,15 +296,11 @@
         198.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_25",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         200.0,
@@ -404,15 +308,11 @@
         225.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_26",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         200.0,
@@ -420,15 +320,11 @@
         225.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_27",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         200.0,
@@ -436,15 +332,11 @@
         225.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_28",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         200.0,
@@ -452,15 +344,11 @@
         225.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_29",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         200.0,
@@ -468,15 +356,11 @@
         225.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_30",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         200.0,
@@ -484,15 +368,11 @@
         225.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_31",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         200.0,
@@ -500,15 +380,11 @@
         225.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_32",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         39.0,
         226.0,
@@ -516,15 +392,11 @@
         250.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_33",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         226.0,
@@ -532,15 +404,11 @@
         250.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_34",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         226.0,
@@ -548,15 +416,11 @@
         250.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_35",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         226.0,
@@ -564,15 +428,11 @@
         250.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_36",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         226.0,
@@ -580,15 +440,11 @@
         250.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_37",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         226.0,
@@ -596,15 +452,11 @@
         250.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_38",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         226.0,
@@ -612,15 +464,11 @@
         250.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_39",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         252.0,
@@ -628,15 +476,11 @@
         277.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_40",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         252.0,
@@ -644,15 +488,11 @@
         277.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_41",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         252.0,
@@ -660,15 +500,11 @@
         277.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_42",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         252.0,
@@ -676,15 +512,11 @@
         277.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_43",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         252.0,
@@ -692,15 +524,11 @@
         277.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_44",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         252.0,
@@ -708,15 +536,11 @@
         277.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_45",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         252.0,
@@ -724,15 +548,11 @@
         277.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_46",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         278.0,
@@ -740,15 +560,11 @@
         303.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_47",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         278.0,
@@ -756,15 +572,11 @@
         303.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_48",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         278.0,
@@ -772,15 +584,11 @@
         303.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_49",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         278.0,
@@ -788,15 +596,11 @@
         303.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_50",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         278.0,
@@ -804,15 +608,11 @@
         303.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_51",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         278.0,
@@ -820,15 +620,11 @@
         303.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_52",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         278.0,
@@ -836,15 +632,11 @@
         303.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_53",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         305.0,
@@ -852,15 +644,11 @@
         330.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_54",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         305.0,
@@ -868,15 +656,11 @@
         330.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_55",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         304.0,
@@ -884,15 +668,11 @@
         330.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_56",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         304.0,
@@ -900,15 +680,11 @@
         330.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_57",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         304.0,
@@ -916,15 +692,11 @@
         330.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_58",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         305.0,
@@ -932,15 +704,11 @@
         330.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_59",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         305.0,
@@ -948,15 +716,11 @@
         330.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_60",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         331.0,
@@ -964,15 +728,11 @@
         355.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_61",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         331.0,
@@ -980,15 +740,11 @@
         355.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_62",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         331.0,
@@ -996,15 +752,11 @@
         355.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_63",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         331.0,
@@ -1012,15 +764,11 @@
         355.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_64",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         331.0,
@@ -1028,15 +776,11 @@
         355.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_65",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         331.0,
@@ -1044,15 +788,11 @@
         355.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_66",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         331.0,
@@ -1060,15 +800,11 @@
         355.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_67",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         357.0,
@@ -1076,15 +812,11 @@
         382.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_68",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         357.0,
@@ -1092,15 +824,11 @@
         382.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_69",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         356.0,
@@ -1108,15 +836,11 @@
         382.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_70",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         357.0,
@@ -1124,15 +848,11 @@
         382.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_71",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         357.0,
@@ -1140,15 +860,11 @@
         382.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_72",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         357.0,
@@ -1156,15 +872,11 @@
         382.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_73",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         357.0,
@@ -1172,15 +884,11 @@
         382.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_74",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         39.0,
         383.0,
@@ -1188,15 +896,11 @@
         408.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_75",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         383.0,
@@ -1204,15 +908,11 @@
         408.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_76",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         383.0,
@@ -1220,15 +920,11 @@
         408.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_77",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         383.0,
@@ -1236,15 +932,11 @@
         408.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_78",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         383.0,
@@ -1252,15 +944,11 @@
         408.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_79",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         383.0,
@@ -1268,15 +956,11 @@
         408.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_80",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         383.0,
@@ -1284,15 +968,11 @@
         408.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_81",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         39.0,
         410.0,
@@ -1300,15 +980,11 @@
         435.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_82",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         409.0,
@@ -1316,15 +992,11 @@
         434.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_83",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         409.0,
@@ -1332,15 +1004,11 @@
         435.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_84",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         409.0,
@@ -1348,15 +1016,11 @@
         435.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_85",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         409.0,
@@ -1364,15 +1028,11 @@
         435.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_86",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         409.0,
@@ -1380,15 +1040,11 @@
         435.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_87",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         410.0,
@@ -1396,15 +1052,11 @@
         435.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_88",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         39.0,
         436.0,
@@ -1412,15 +1064,11 @@
         461.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_89",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         436.0,
@@ -1428,15 +1076,11 @@
         461.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_90",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         436.0,
@@ -1444,15 +1088,11 @@
         461.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_91",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         436.0,
@@ -1460,15 +1100,11 @@
         461.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_92",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         436.0,
@@ -1476,15 +1112,11 @@
         461.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_93",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         436.0,
@@ -1492,15 +1124,11 @@
         461.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_94",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         436.0,
@@ -1508,15 +1136,11 @@
         461.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_95",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         39.0,
         462.0,
@@ -1524,15 +1148,11 @@
         487.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_96",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         463.0,
@@ -1540,15 +1160,11 @@
         487.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_97",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         462.0,
@@ -1556,15 +1172,11 @@
         487.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_98",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         462.0,
@@ -1572,15 +1184,11 @@
         487.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_99",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         462.0,
@@ -1588,15 +1196,11 @@
         487.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_100",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         462.0,
@@ -1604,15 +1208,11 @@
         487.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_101",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         463.0,
@@ -1620,15 +1220,11 @@
         487.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_102",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         488.0,
@@ -1636,15 +1232,11 @@
         514.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_103",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         489.0,
@@ -1652,15 +1244,11 @@
         514.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_104",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         488.0,
@@ -1668,15 +1256,11 @@
         514.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_105",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         488.0,
@@ -1684,15 +1268,11 @@
         514.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_106",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         488.0,
@@ -1700,15 +1280,11 @@
         514.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_107",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         489.0,
@@ -1716,15 +1292,11 @@
         514.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_108",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         489.0,
@@ -1732,15 +1304,11 @@
         514.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_109",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         40.0,
         515.0,
@@ -1748,15 +1316,11 @@
         539.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_110",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         110.0,
         515.0,
@@ -1764,15 +1328,11 @@
         539.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_111",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         515.0,
@@ -1780,15 +1340,11 @@
         539.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_112",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         424.0,
         515.0,
@@ -1796,15 +1352,11 @@
         539.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_113",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         470.0,
         515.0,
@@ -1812,15 +1364,11 @@
         539.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_114",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         517.0,
         515.0,
@@ -1828,15 +1376,11 @@
         539.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_115",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         564.0,
         515.0,
@@ -1844,15 +1388,11 @@
         539.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p1_116",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         377.0,
         541.0,
@@ -1860,15 +1400,11 @@
         564.0
       ],
       "page": 1,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_1",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         72.0,
@@ -1876,15 +1412,11 @@
         94.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_2",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         72.0,
@@ -1892,15 +1424,11 @@
         93.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_3",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         72.0,
@@ -1908,15 +1436,11 @@
         94.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_4",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         72.0,
@@ -1924,15 +1448,11 @@
         94.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_5",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         72.0,
@@ -1940,15 +1460,11 @@
         94.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_6",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         72.0,
@@ -1956,15 +1472,11 @@
         94.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_7",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         72.0,
@@ -1972,15 +1484,11 @@
         93.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_8",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         95.0,
@@ -1988,15 +1496,11 @@
         117.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_9",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         95.0,
@@ -2004,15 +1508,11 @@
         117.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_10",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         95.0,
@@ -2020,15 +1520,11 @@
         117.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_11",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         95.0,
@@ -2036,15 +1532,11 @@
         117.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_12",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         95.0,
@@ -2052,15 +1544,11 @@
         117.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_13",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         95.0,
@@ -2068,15 +1556,11 @@
         117.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_14",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         95.0,
@@ -2084,15 +1568,11 @@
         117.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_15",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         118.0,
@@ -2100,15 +1580,11 @@
         140.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_16",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         118.0,
@@ -2116,15 +1592,11 @@
         140.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_17",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         118.0,
@@ -2132,15 +1604,11 @@
         140.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_18",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         118.0,
@@ -2148,15 +1616,11 @@
         140.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_19",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         118.0,
@@ -2164,15 +1628,11 @@
         140.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_20",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         118.0,
@@ -2180,15 +1640,11 @@
         140.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_21",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         118.0,
@@ -2196,15 +1652,11 @@
         140.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_22",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         142.0,
@@ -2212,15 +1664,11 @@
         164.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_23",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         142.0,
@@ -2228,15 +1676,11 @@
         164.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_24",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         142.0,
@@ -2244,15 +1688,11 @@
         164.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_25",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         142.0,
@@ -2260,15 +1700,11 @@
         164.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_26",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         142.0,
@@ -2276,15 +1712,11 @@
         164.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_27",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         142.0,
@@ -2292,15 +1724,11 @@
         164.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_28",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         142.0,
@@ -2308,15 +1736,11 @@
         164.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_29",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         165.0,
@@ -2324,15 +1748,11 @@
         188.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_30",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         165.0,
@@ -2340,15 +1760,11 @@
         188.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_31",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         165.0,
@@ -2356,15 +1772,11 @@
         188.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_32",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         165.0,
@@ -2372,15 +1784,11 @@
         188.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_33",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         165.0,
@@ -2388,15 +1796,11 @@
         188.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_34",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         165.0,
@@ -2404,15 +1808,11 @@
         188.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_35",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         165.0,
@@ -2420,15 +1820,11 @@
         188.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_36",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         189.0,
@@ -2436,15 +1832,11 @@
         210.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_37",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         189.0,
@@ -2452,15 +1844,11 @@
         211.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_38",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         189.0,
@@ -2468,15 +1856,11 @@
         210.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_39",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         189.0,
@@ -2484,15 +1868,11 @@
         210.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_40",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         189.0,
@@ -2500,15 +1880,11 @@
         210.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_41",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         189.0,
@@ -2516,15 +1892,11 @@
         210.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_42",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         189.0,
@@ -2532,15 +1904,11 @@
         211.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_43",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         212.0,
@@ -2548,15 +1916,11 @@
         234.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_44",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         212.0,
@@ -2564,15 +1928,11 @@
         234.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_45",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         212.0,
@@ -2580,15 +1940,11 @@
         234.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_46",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         212.0,
@@ -2596,15 +1952,11 @@
         234.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_47",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         212.0,
@@ -2612,15 +1964,11 @@
         234.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_48",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         212.0,
@@ -2628,15 +1976,11 @@
         234.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_49",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         212.0,
@@ -2644,15 +1988,11 @@
         234.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_50",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         235.0,
@@ -2660,15 +2000,11 @@
         257.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_51",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         236.0,
@@ -2676,15 +2012,11 @@
         257.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_52",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         235.0,
@@ -2692,15 +2024,11 @@
         257.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_53",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         235.0,
@@ -2708,15 +2036,11 @@
         257.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_54",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         235.0,
@@ -2724,15 +2048,11 @@
         257.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_55",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         235.0,
@@ -2740,15 +2060,11 @@
         257.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_56",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         235.0,
@@ -2756,15 +2072,11 @@
         257.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_57",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         259.0,
@@ -2772,15 +2084,11 @@
         281.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_58",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         259.0,
@@ -2788,15 +2096,11 @@
         281.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_59",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         259.0,
@@ -2804,15 +2108,11 @@
         281.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_60",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         259.0,
@@ -2820,15 +2120,11 @@
         281.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_61",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         259.0,
@@ -2836,15 +2132,11 @@
         281.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_62",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         259.0,
@@ -2852,15 +2144,11 @@
         281.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_63",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         259.0,
@@ -2868,15 +2156,11 @@
         281.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_64",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         282.0,
@@ -2884,15 +2168,11 @@
         304.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_65",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         283.0,
@@ -2900,15 +2180,11 @@
         304.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_66",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         282.0,
@@ -2916,15 +2192,11 @@
         304.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_67",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         282.0,
@@ -2932,15 +2204,11 @@
         304.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_68",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         282.0,
@@ -2948,15 +2216,11 @@
         304.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_69",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         282.0,
@@ -2964,15 +2228,11 @@
         304.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_70",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         283.0,
@@ -2980,15 +2240,11 @@
         304.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_71",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         306.0,
@@ -2996,15 +2252,11 @@
         328.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_72",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         306.0,
@@ -3012,15 +2264,11 @@
         328.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_73",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         305.0,
@@ -3028,15 +2276,11 @@
         328.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_74",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         305.0,
@@ -3044,15 +2288,11 @@
         328.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_75",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         305.0,
@@ -3060,15 +2300,11 @@
         328.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_76",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         305.0,
@@ -3076,15 +2312,11 @@
         328.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_77",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         306.0,
@@ -3092,15 +2324,11 @@
         328.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_78",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         329.0,
@@ -3108,15 +2336,11 @@
         351.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_79",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         329.0,
@@ -3124,15 +2348,11 @@
         351.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_80",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         329.0,
@@ -3140,15 +2360,11 @@
         351.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_81",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         329.0,
@@ -3156,15 +2372,11 @@
         351.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_82",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         329.0,
@@ -3172,15 +2384,11 @@
         351.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_83",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         329.0,
@@ -3188,15 +2396,11 @@
         351.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_84",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         329.0,
@@ -3204,15 +2408,11 @@
         351.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_85",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         353.0,
@@ -3220,15 +2420,11 @@
         375.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_86",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         353.0,
@@ -3236,15 +2432,11 @@
         375.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_87",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         353.0,
@@ -3252,15 +2444,11 @@
         375.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_88",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         353.0,
@@ -3268,15 +2456,11 @@
         375.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_89",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         353.0,
@@ -3284,15 +2468,11 @@
         375.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_90",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         353.0,
@@ -3300,15 +2480,11 @@
         375.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_91",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         353.0,
@@ -3316,15 +2492,11 @@
         375.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_92",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         376.0,
@@ -3332,15 +2504,11 @@
         398.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_93",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         376.0,
@@ -3348,15 +2516,11 @@
         398.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_94",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         376.0,
@@ -3364,15 +2528,11 @@
         398.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_95",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         376.0,
@@ -3380,15 +2540,11 @@
         398.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_96",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         376.0,
@@ -3396,15 +2552,11 @@
         398.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_97",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         376.0,
@@ -3412,15 +2564,11 @@
         398.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_98",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         376.0,
@@ -3428,15 +2576,11 @@
         398.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_99",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         399.0,
@@ -3444,15 +2588,11 @@
         421.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_100",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         399.0,
@@ -3460,15 +2600,11 @@
         421.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_101",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         399.0,
@@ -3476,15 +2612,11 @@
         421.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_102",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         399.0,
@@ -3492,15 +2624,11 @@
         421.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_103",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         399.0,
@@ -3508,15 +2636,11 @@
         421.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_104",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         399.0,
@@ -3524,15 +2648,11 @@
         421.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_105",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         399.0,
@@ -3540,15 +2660,11 @@
         421.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_106",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         422.0,
@@ -3556,15 +2672,11 @@
         445.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_107",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         423.0,
@@ -3572,15 +2684,11 @@
         445.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_108",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         422.0,
@@ -3588,15 +2696,11 @@
         445.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_109",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         422.0,
@@ -3604,15 +2708,11 @@
         445.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_110",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         422.0,
@@ -3620,15 +2720,11 @@
         445.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_111",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         422.0,
@@ -3636,15 +2732,11 @@
         445.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_112",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         423.0,
@@ -3652,15 +2744,11 @@
         445.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_113",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         446.0,
@@ -3668,15 +2756,11 @@
         468.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_114",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         446.0,
@@ -3684,15 +2768,11 @@
         468.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_115",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         446.0,
@@ -3700,15 +2780,11 @@
         468.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_116",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         446.0,
@@ -3716,15 +2792,11 @@
         468.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_117",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         446.0,
@@ -3732,15 +2804,11 @@
         468.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_118",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         446.0,
@@ -3748,15 +2816,11 @@
         468.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_119",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         446.0,
@@ -3764,15 +2828,11 @@
         468.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_120",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         469.0,
@@ -3780,15 +2840,11 @@
         491.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_121",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         470.0,
@@ -3796,15 +2852,11 @@
         491.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_122",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         469.0,
@@ -3812,15 +2864,11 @@
         491.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_123",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         469.0,
@@ -3828,15 +2876,11 @@
         491.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_124",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         469.0,
@@ -3844,15 +2888,11 @@
         491.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_125",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         469.0,
@@ -3860,15 +2900,11 @@
         491.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_126",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         469.0,
@@ -3876,15 +2912,11 @@
         491.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_127",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         492.0,
@@ -3892,15 +2924,11 @@
         515.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_128",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         493.0,
@@ -3908,15 +2936,11 @@
         515.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_129",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         492.0,
@@ -3924,15 +2948,11 @@
         515.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_130",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         492.0,
@@ -3940,15 +2960,11 @@
         515.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_131",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         492.0,
@@ -3956,15 +2972,11 @@
         515.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_132",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         492.0,
@@ -3972,15 +2984,11 @@
         515.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_133",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         492.0,
@@ -3988,15 +2996,11 @@
         515.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_134",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         516.0,
@@ -4004,15 +3008,11 @@
         538.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_135",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         516.0,
@@ -4020,15 +3020,11 @@
         538.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_136",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         516.0,
@@ -4036,15 +3032,11 @@
         538.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_137",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         516.0,
@@ -4052,15 +3044,11 @@
         538.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_138",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         516.0,
@@ -4068,15 +3056,11 @@
         538.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_139",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         516.0,
@@ -4084,15 +3068,11 @@
         538.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_140",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         516.0,
@@ -4100,15 +3080,11 @@
         538.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_141",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         38.0,
         539.0,
@@ -4116,15 +3092,11 @@
         562.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_142",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         109.0,
         540.0,
@@ -4132,15 +3104,11 @@
         562.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_143",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         375.0,
         539.0,
@@ -4148,15 +3116,11 @@
         562.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_144",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         422.0,
         539.0,
@@ -4164,15 +3128,11 @@
         562.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_145",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         469.0,
         539.0,
@@ -4180,15 +3140,11 @@
         562.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_146",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         516.0,
         539.0,
@@ -4196,15 +3152,11 @@
         562.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     },
     {
       "name": "commonforms_text_p2_147",
-      "type": "Text",
+      "type": "text",
       "bbox": [
         563.0,
         539.0,
@@ -4212,11 +3164,7 @@
         561.0
       ],
       "page": 2,
-      "label": null,
-      "value": "",
-      "flags": 0,
-      "options": null,
-      "max_len": 0
+      "options": null
     }
   ]
 }
