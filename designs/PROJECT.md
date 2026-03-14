@@ -12,7 +12,7 @@ Given a fillable PDF, produce a portable Typst package that a user can edit to f
 |---|---|---|
 | **Input** | User-supplied fillable PDF | — |
 | **Extraction** | PyMuPDF | `FIELDS.json`, `page1.png`, `page2.png`, … |
-| **Codegen** | formalizer orchestrator | `FIELDS.json`, `pageN.png`, `lib.typ`, `copied-form.typ` |
+| **Codegen** | formalizer orchestrator | `FIELDS.json`, `pageN.png`, `lib.typ`, `form.typ`, `example.typ` |
 | **Output** | Self-contained Typst package | User edits and compiles with `typst compile` |
 
 ## formalizer-engine
