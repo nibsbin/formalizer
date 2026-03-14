@@ -45,13 +45,13 @@ def main(argv: list[str] | None = None) -> None:
         print(f"Error: {exc}", file=sys.stderr)
         sys.exit(1)
 
-    # Auto-compile example.typ → example.pdf
-    example_typ = out / "example.typ"
+    # Auto-compile example.typ → example.pdf and debug.typ → debug.pdf
+    out_dir = out / "out"
+    example_typ = out_dir / "example.typ"
     compile_ok = True
     if example_typ.exists():
         result = subprocess.run(
-            ["typst", "compile", "example.typ", "example.pdf"],
-            cwd=out,
+            ["typst", "compile", "--root", str(out), str(example_typ), str(out_dir / "example.pdf")],
             capture_output=True,
             text=True,
         )
@@ -60,12 +60,10 @@ def main(argv: list[str] | None = None) -> None:
             print(f"✓ Package generated in {out}")
             print(f"  ⚠ typst compile example.typ failed: {result.stderr.strip()}", file=sys.stderr)
 
-    # Auto-compile debug.typ → debug.pdf
-    debug_typ = out / "debug.typ"
+    debug_typ = out_dir / "debug.typ"
     if debug_typ.exists():
         result = subprocess.run(
-            ["typst", "compile", "debug.typ", "debug.pdf"],
-            cwd=out,
+            ["typst", "compile", "--root", str(out), str(debug_typ), str(out_dir / "debug.pdf")],
             capture_output=True,
             text=True,
         )
@@ -75,8 +73,8 @@ def main(argv: list[str] | None = None) -> None:
 
     if compile_ok:
         print(f"✓ Package generated in {out}")
-        print(f"  Preview: {out / 'example.pdf'}")
-        print(f"  Debug:   {out / 'debug.pdf'}")
+        print(f"  Preview: {out_dir / 'example.pdf'}")
+        print(f"  Debug:   {out_dir / 'debug.pdf'}")
     elif example_typ.exists() or debug_typ.exists():
         pass  # error already printed above
     else:

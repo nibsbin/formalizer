@@ -57,8 +57,8 @@ class TestCodegen:
         assert (tmp_path / "lib.typ").exists()
         assert (tmp_path / "typst.toml").exists()
         assert (tmp_path / "form.typ").exists()
-        assert (tmp_path / "example.typ").exists()
-        assert (tmp_path / "debug.typ").exists()
+        assert (tmp_path / "out" / "example.typ").exists()
+        assert (tmp_path / "out" / "debug.typ").exists()
 
     def test_form_typ_has_debug_param(self, tmp_path: Path):
         schema = _minimal_schema()
@@ -72,9 +72,9 @@ class TestCodegen:
         schema = _minimal_schema()
         (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
         codegen(schema, tmp_path, "pkg")
-        debug = (tmp_path / "debug.typ").read_text()
+        debug = (tmp_path / "out" / "debug.typ").read_text()
         assert "debug: true" in debug
-        assert '#import "form.typ": form' in debug
+        assert '#import "../form.typ": form' in debug
 
     def test_typst_toml_name(self, tmp_path: Path):
         schema = _minimal_schema()
@@ -116,8 +116,8 @@ class TestCodegen:
         schema = _minimal_schema()
         (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
         codegen(schema, tmp_path, "pkg")
-        example = (tmp_path / "example.typ").read_text()
-        assert '#import "form.typ": form' in example
+        example = (tmp_path / "out" / "example.typ").read_text()
+        assert '#import "../form.typ": form' in example
 
     def test_combobox_default_is_first_option(self, tmp_path: Path):
         schema = _minimal_schema(fields=[
@@ -181,7 +181,7 @@ class TestCodegen:
         ])
         (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
         codegen(schema, tmp_path, "pkg")
-        example = (tmp_path / "example.typ").read_text()
+        example = (tmp_path / "out" / "example.typ").read_text()
         assert '"First Name"' in example
 
     def test_humanised_machine_name_fallback(self, tmp_path: Path):
@@ -191,7 +191,7 @@ class TestCodegen:
         ])
         (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
         codegen(schema, tmp_path, "pkg")
-        example = (tmp_path / "example.typ").read_text()
+        example = (tmp_path / "out" / "example.typ").read_text()
         # "commonforms_text_p1_1" → strip prefix → "text_p1_1" → strip page/index → "text" → title → "Text"
         assert '"Text"' in example
 
@@ -258,13 +258,12 @@ class TestCodegenCompiles:
         codegen(schema, tmp_path, "test-pkg")
 
         result = subprocess.run(
-            ["typst", "compile", "example.typ", "example.pdf"],
-            cwd=tmp_path,
+            ["typst", "compile", "--root", str(tmp_path), str(tmp_path / "out" / "example.typ"), str(tmp_path / "out" / "example.pdf")],
             capture_output=True,
             text=True,
         )
         assert result.returncode == 0, f"typst compile failed:\n{result.stderr}"
-        assert (tmp_path / "example.pdf").exists()
+        assert (tmp_path / "out" / "example.pdf").exists()
 
     def test_generated_debug_compiles(self, tmp_path: Path):
         from formalizer.extract import extract
@@ -277,10 +276,9 @@ class TestCodegenCompiles:
         codegen(schema, tmp_path, "test-pkg")
 
         result = subprocess.run(
-            ["typst", "compile", "debug.typ", "debug.pdf"],
-            cwd=tmp_path,
+            ["typst", "compile", "--root", str(tmp_path), str(tmp_path / "out" / "debug.typ"), str(tmp_path / "out" / "debug.pdf")],
             capture_output=True,
             text=True,
         )
         assert result.returncode == 0, f"typst compile debug.typ failed:\n{result.stderr}"
-        assert (tmp_path / "debug.pdf").exists()
+        assert (tmp_path / "out" / "debug.pdf").exists()

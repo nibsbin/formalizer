@@ -80,5 +80,5 @@ class TestCLI:
             text=True,
         )
         assert result.returncode == 0
-        assert (out / "example.pdf").exists()
-        assert (out / "debug.pdf").exists()
+        assert (out / "out" / "example.pdf").exists()
+        assert (out / "out" / "debug.pdf").exists()
