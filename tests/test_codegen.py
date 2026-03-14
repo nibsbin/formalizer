@@ -168,14 +168,15 @@ class TestCodegen:
         assert '"First Name"' in example
 
     def test_humanised_machine_name_fallback(self, tmp_path: Path):
-        """Gap 8: machine-generated field names should fall back to 'Sample Text'."""
+        """Gap 8: machine-generated field names should produce humanised text."""
         schema = _minimal_schema(fields=[
             {"name": "commonforms_text_p1_1", "type": "text", "bbox": [0, 0, 100, 20], "page": 1, "options": None},
         ])
         (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
         codegen(schema, tmp_path, "pkg")
         example = (tmp_path / "example.typ").read_text()
-        assert '"Text"' in example or '"Sample Text"' in example
+        # "commonforms_text_p1_1" → strip prefix → "text_p1_1" → strip page/index → "text" → title → "Text"
+        assert '"Text"' in example
 
 
 # ---------------------------------------------------------------------------

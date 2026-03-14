@@ -8,19 +8,21 @@ from importlib.resources import as_file, files
 from pathlib import Path
 
 
-def _resolve_engine_lib() -> Path:
-    """Locate lib.typ — installed resource first, in-tree fallback for dev."""
+def _copy_engine_lib(dest: Path) -> None:
+    """Copy lib.typ to *dest* — installed resource first, in-tree fallback for dev."""
     try:
-        ref = files("formalizer") / "resources" / "lib.typ"
+        ref = files("formalizer").joinpath("resources", "lib.typ")
         with as_file(ref) as p:
             if p.exists():
-                return p
-    except Exception:
+                shutil.copy2(p, dest)
+                return
+    except (TypeError, FileNotFoundError, ModuleNotFoundError):
         pass
     # Development fallback
     dev = Path(__file__).resolve().parent.parent.parent / "formalizer-engine" / "lib.typ"
     if dev.exists():
-        return dev
+        shutil.copy2(dev, dest)
+        return
     raise FileNotFoundError("Engine lib.typ not found")
 
 
@@ -125,8 +127,7 @@ def codegen(schema: dict, out: Path, name: str) -> None:
     *name* is the package name written into ``typst.toml``.
     """
     # --- lib.typ (copy engine) ---
-    engine_lib = _resolve_engine_lib()
-    shutil.copy2(engine_lib, out / "lib.typ")
+    _copy_engine_lib(out / "lib.typ")
 
     # --- typst.toml ---
     (out / "typst.toml").write_text(
