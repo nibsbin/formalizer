@@ -141,7 +141,7 @@ wheels = [
 ]
 
 [[package]]
-name = "typst-formalizer-tests"
+name = "formalizer-engine-tests"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

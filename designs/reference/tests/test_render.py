@@ -1,4 +1,4 @@
-"""Tests for the typst-formalizer Typst package.
+"""Tests for the formalizer-engine Typst package.
 
 Each test builds a small .typ file that imports lib.typ and calls render-form,
 then compiles it with the ``typst`` CLI and verifies that compilation succeeds

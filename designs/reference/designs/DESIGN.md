@@ -1,4 +1,4 @@
-# Typst Formalizer Design Doc
+# Formalizer Engine Design Doc
 
 A publishable Typst package that renders pixel-perfect PDF form replicas from a PyMuPDF-extracted schema.
 
@@ -62,4 +62,4 @@ See ./FIELDS_SCHEMA.md for specs and ./example/FIELDS.json for example.
 
 ## Testing
 
-Use the `uv` project manager to bootstrap a python pytest environment in tests/. Write mixed .py and .typ tests with your discretion to robustly validate typst-formalizer package functionality.
+Use the `uv` project manager to bootstrap a python pytest environment in tests/. Write mixed .py and .typ tests with your discretion to robustly validate formalizer-engine package functionality.

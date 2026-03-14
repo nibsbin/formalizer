@@ -1,6 +1,6 @@
 # FIELDS.json Schema Spec
 
-Contract between the orchestration layer (PyMuPDF extraction) and the Typst formalizer package.
+Contract between the orchestration layer (PyMuPDF extraction) and the formalizer-engine package.
 
 ## Top-level
 

@@ -1,4 +1,4 @@
-// Typst Formalizer – rendering engine
+// Formalizer Engine – rendering engine
 // Renders pixel-perfect PDF form replicas from a PyMuPDF-extracted schema.
 
 /// Render a single field's content overlay.

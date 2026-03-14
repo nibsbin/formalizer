@@ -1,4 +1,4 @@
-# typst-formalizer
+# formalizer-engine
 
 A Typst package that renders pixel-perfect PDF form replicas from a PyMuPDF-extracted schema. Overlay filled-in field values onto rasterized page backgrounds — no AcroForm interaction required.
 

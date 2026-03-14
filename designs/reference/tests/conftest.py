@@ -1,4 +1,4 @@
-"""Shared fixtures for typst-formalizer tests."""
+"""Shared fixtures for formalizer-engine tests."""
 
 import json
 import os
@@ -10,7 +10,7 @@ from pathlib import Path
 
 import pytest
 
-# Root of the typst-formalizer package (one level up from tests/)
+# Root of the formalizer-engine package (one level up from tests/)
 PACKAGE_ROOT = Path(__file__).resolve().parent.parent
 
 
