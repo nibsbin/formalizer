@@ -5,9 +5,11 @@ description = "Orchestrate end-to-end reproduction of fillable PDF forms as self
 requires-python = ">=3.10"
 license = "Apache-2.0"
 authors = [{ name = "nibsbin" }]
-dependencies = [
-    "pymupdf>=1.27.0",
-]
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/nibsbin/formalizer",
+dependencies = ["pymupdf>=1.27.0"]
 
 [project.scripts]
 formalizer = "formalizer.cli:main"
@@ -26,6 +28,4 @@ packages = ["src/formalizer"]
 testpaths = ["tests"]
 
 [dependency-groups]
-dev = [
-    "pytest>=9.0.2",
-]
+dev = ["pytest>=9.0.2"]
