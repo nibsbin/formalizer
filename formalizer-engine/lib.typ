@@ -9,6 +9,7 @@
 
 /// Render a text-like field with word-wrapping and shrink-to-fit.
 #let render-text-field(display, width, height, x-inset, y-inset) = {
+  set par(leading: 0.25em)
   context {
     let final-size = FORM_MIN_TEXT_SIZE
     let current = FORM_MAX_TEXT_SIZE
