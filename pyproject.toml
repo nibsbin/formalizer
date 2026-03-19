@@ -1,6 +1,6 @@
 [project]
 name = "formalizer"
-version = "0.1.3"
+version = "0.2.0"
 description = "Orchestrate end-to-end reproduction of fillable PDF forms as self-contained Typst packages."
 requires-python = ">=3.10"
 license = "Apache-2.0"
