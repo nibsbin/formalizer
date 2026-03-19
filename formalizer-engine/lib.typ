@@ -5,6 +5,7 @@
 /// Adjust these to change the overall form text appearance.
 #let FORM_MAX_TEXT_SIZE = 14pt
 #let FORM_MIN_TEXT_SIZE = 6pt
+#let FORM_MIN_CHARS_PER_LINE = 7
 
 /// Render a text-like field with word-wrapping and shrink-to-fit.
 #let render-text-field(display, width, height, x-inset, y-inset) = {
@@ -14,15 +15,17 @@
     let step = 0.5pt
 
     // Find the largest font size that fits both horizontally and vertically
+    // and optionally leaves enough room for a minimum number of characters
     while current >= FORM_MIN_TEXT_SIZE {
       let m = measure(block(width: width - 2 * x-inset, text(size: current, display)))
-      if m.height <= height - 2 * y-inset {
+      let char-m = measure(text(size: current, "0" * FORM_MIN_CHARS_PER_LINE))
+
+      if m.height <= height - 2 * y-inset and char-m.width <= width - 2 * x-inset {
         final-size = current
         break
       }
       current = current - step
     }
-
     // Alignment: center vertically if it's a short box (likely single line),
     // otherwise top-align for multi-line paragraphs.
     let vert-align = if height < 24pt { horizon } else { top }
