@@ -369,6 +369,8 @@ class TestRealWorldSchema:
             bg_names.append(name)
 
         bg_list = ", ".join(f'"{n}"' for n in bg_names)
+        if len(bg_names) == 1:
+            bg_list += ","
         _write_typ(tmp_dir, "test.typ", f"""\
 #import "lib.typ": render-form
 
