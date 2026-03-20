@@ -59,9 +59,8 @@
       }
     }
 
-    // Center vertically for short boxes (single line),
-    // top-align for multi-line paragraphs.
-    let vert-align = if height < 24pt { horizon } else { top }
+    // Default to vertically centered. Only top-align for tall "text areas".
+    let vert-align = if height >= 40pt { top } else { horizon }
 
     box(
       width: width,
