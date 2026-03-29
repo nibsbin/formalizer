@@ -18,6 +18,8 @@ _TYPE_MAP: dict[str, str | None] = {
 }
 
 
+_BACKGROUND_EXT = "svg"
+
 
 def extract(pdf: str | Path, out: Path) -> dict:
     """Read *pdf* and write ``FIELDS.json`` + page SVGs into *out*.
@@ -69,7 +71,8 @@ def extract(pdf: str | Path, out: Path) -> dict:
 
     # Export each page as an SVG background
     for i, page in enumerate(doc):
-        (out / f"page{i + 1}.svg").write_text(page.get_svg_image())
+        bg_path = out / f"page{i + 1}.{_BACKGROUND_EXT}"
+        bg_path.write_text(page.get_svg_image(), encoding="utf-8")
 
     doc.close()
     return schema
