@@ -8,6 +8,9 @@ from importlib.resources import as_file, files
 from pathlib import Path
 
 
+_BACKGROUND_EXT = "svg"
+
+
 def _copy_engine_lib(dest: Path) -> None:
     """Copy lib.typ to *dest* — installed resource first, in-tree fallback for dev."""
     try:
@@ -144,7 +147,7 @@ def codegen(schema: dict, out: Path, name: str) -> None:
 
     # Build background list
     num_pages = len(schema["pages"])
-    bg_names = [f'"page{i + 1}.png"' for i in range(num_pages)]
+    bg_names = [f'"page{i + 1}.{_BACKGROUND_EXT}"' for i in range(num_pages)]
     bg_list = ", ".join(bg_names)
 
     # --- form.typ ---

@@ -137,8 +137,8 @@ class TestCodegen:
         (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
         codegen(schema, tmp_path, "pkg")
         form = (tmp_path / "form.typ").read_text()
-        assert '"page1.png"' in form
-        assert '"page2.png"' in form
+        assert '"page1.svg"' in form
+        assert '"page2.svg"' in form
 
     def test_typst_toml_author_formalizer(self, tmp_path: Path):
         """Gap 5: generated typst.toml should use 'formalizer' as author."""

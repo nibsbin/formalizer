@@ -21,7 +21,7 @@ class TestGenerate:
         assert (out / "typst.toml").exists()
         assert (out / "form.typ").exists()
         assert (out / "out" / "example.typ").exists()
-        assert (out / "page1.png").exists()
+        assert (out / "page1.svg").exists()
 
     def test_default_name_from_out_basename(self, sample_pdf: Path, tmp_path: Path):
         out = tmp_path / "My Form"
@@ -58,5 +58,5 @@ class TestGenerate:
         generate(pdf=af4141_pdf, out=out)
         schema = json.loads((out / "FIELDS.json").read_text())
         assert len(schema["pages"]) == 2
-        assert (out / "page1.png").exists()
-        assert (out / "page2.png").exists()
+        assert (out / "page1.svg").exists()
+        assert (out / "page2.svg").exists()
