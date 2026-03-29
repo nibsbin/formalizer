@@ -11,7 +11,7 @@ from formalizer.extract import extract
 
 
 class TestExtract:
-    """Extraction from a fillable PDF → FIELDS.json + page PNGs."""
+    """Extraction from a fillable PDF → FIELDS.json + page SVGs."""
 
     def test_fields_json_created(self, sample_pdf: Path, tmp_path: Path):
         schema = extract(sample_pdf, tmp_path)
@@ -56,12 +56,12 @@ class TestExtract:
         for f in schema["fields"]:
             assert f["type"] != "button", "push buttons should be excluded"
 
-    def test_page_pngs_created(self, sample_pdf: Path, tmp_path: Path):
+    def test_page_svgs_created(self, sample_pdf: Path, tmp_path: Path):
         schema = extract(sample_pdf, tmp_path)
         for i in range(len(schema["pages"])):
-            png = tmp_path / f"page{i + 1}.png"
-            assert png.exists(), f"Missing: {png.name}"
-            assert png.stat().st_size > 0
+            svg = tmp_path / f"page{i + 1}.svg"
+            assert svg.exists(), f"Missing: {svg.name}"
+            assert svg.stat().st_size > 0
 
     def test_options_present_for_combobox(self, sample_pdf: Path, tmp_path: Path):
         schema = extract(sample_pdf, tmp_path)
@@ -76,11 +76,11 @@ class TestExtract:
 class TestExtractMultiPage:
     """Multi-page PDF extraction."""
 
-    def test_multi_page_pngs(self, af4141_pdf: Path, tmp_path: Path):
+    def test_multi_page_svgs(self, af4141_pdf: Path, tmp_path: Path):
         schema = extract(af4141_pdf, tmp_path)
         assert len(schema["pages"]) == 2
-        assert (tmp_path / "page1.png").exists()
-        assert (tmp_path / "page2.png").exists()
+        assert (tmp_path / "page1.svg").exists()
+        assert (tmp_path / "page2.svg").exists()
 
     def test_fields_span_pages(self, af4141_pdf: Path, tmp_path: Path):
         schema = extract(af4141_pdf, tmp_path)

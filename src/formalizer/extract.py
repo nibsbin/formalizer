@@ -17,11 +17,10 @@ _TYPE_MAP: dict[str, str | None] = {
     "Button": None,  # push-buttons are skipped
 }
 
-_RENDER_DPI = 250
 
 
 def extract(pdf: str | Path, out: Path) -> dict:
-    """Read *pdf* and write ``FIELDS.json`` + page PNGs into *out*.
+    """Read *pdf* and write ``FIELDS.json`` + page SVGs into *out*.
 
     Returns the parsed schema dict.
     """
@@ -68,10 +67,9 @@ def extract(pdf: str | Path, out: Path) -> dict:
     # Write FIELDS.json
     (out / "FIELDS.json").write_text(json.dumps(schema, indent=2))
 
-    # Rasterize each page as a PNG background
+    # Export each page as an SVG background
     for i, page in enumerate(doc):
-        pix = page.get_pixmap(dpi=_RENDER_DPI)
-        pix.save(str(out / f"page{i + 1}.png"))
+        (out / f"page{i + 1}.svg").write_text(page.get_svg_image())
 
     doc.close()
     return schema

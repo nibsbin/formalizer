@@ -6,7 +6,7 @@ Maintained by [TtQ](https://tonguetoquill.com).
 
 ## How it works
 
-1. **Extract** — PyMuPDF reads the PDF and outputs `FIELDS.json` (field schema) and `pageN.png` background images.
+1. **Extract** — PyMuPDF reads the PDF and outputs `FIELDS.json` (field schema) and `pageN.svg` background images.
 2. **Codegen** — The orchestrator writes a Typst package with a typed `form()` function and a pre-filled `example.typ`.
 3. **Fill** — Edit `example.typ`, replace the dummy values with real ones, compile with `typst compile`.
 
@@ -15,7 +15,7 @@ Maintained by [TtQ](https://tonguetoquill.com).
   typst.toml      # package manifest
   lib.typ         # rendering engine
   FIELDS.json     # extracted field schema
-  page1.png       # rasterized page backgrounds
+  page1.svg       # vector page backgrounds
   form.typ        # generated API wrapper (do not edit)
   example.typ     # your starting point — edit this
 ```
