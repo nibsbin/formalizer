@@ -7,6 +7,24 @@
 #let FORM_MIN_TEXT_SIZE = 6pt
 #let FORM_MIN_CHARS_PER_LINE = 7
 
+/// Coerce any user-supplied scalar value to a plain string.
+/// Accepts the same types as Typst's built-in str(), plus content –
+/// content is extracted via repr() with its surrounding square brackets stripped.
+/// This lets callers write `[Hello]` (content) instead of `"Hello"` (string).
+#let to-str(value) = {
+  if type(value) == content {
+    let r = repr(value)
+    // repr([hello]) → "[hello]" — strip the outer square brackets
+    if r.starts-with("[") and r.ends-with("]") {
+      r.slice(1, r.len() - 1)
+    } else {
+      r
+    }
+  } else {
+    str(value)
+  }
+}
+
 /// Should this field shrink text to a single line rather than word-wrap?
 /// True for short/narrow fields with brief content (grades, ranks, dates).
 #let should-shrink-to-fit(display, width, height) = {
@@ -81,8 +99,8 @@
 /// - field (dictionary): raw field entry from the schema
 #let render-field(field-type, value, width, height, field) = {
   if field-type == "text" {
-    if value != none and str(value) != "" {
-      render-text-field(str(value), width, height, 1.5pt, 1pt)
+    if value != none and to-str(value) != "" {
+      render-text-field(to-str(value), width, height, 1.5pt, 1pt)
     }
   } else if field-type == "checkbox" {
     if value == true {
@@ -104,11 +122,11 @@
       )
     }
   } else if field-type == "combobox" or field-type == "listbox" {
-    let display = if value != none { str(value) } else { "" }
+    let display = if value != none { to-str(value) } else { "" }
     // Resolve export value → display label when options are present
     if field.at("options", default: none) != none and value != none {
       for opt in field.options {
-        if str(opt.at(0)) == str(value) {
+        if str(opt.at(0)) == to-str(value) {
           display = str(opt.at(1))
         }
       }
@@ -129,10 +147,10 @@
   if group-value == none { return false }
   let ev = field.at("export_value", default: none)
   if ev != none {
-    return str(ev) == str(group-value)
+    return str(ev) == to-str(group-value)
   }
   // Fallback: match against the stringified index
-  str(index-in-group) == str(group-value)
+  str(index-in-group) == to-str(group-value)
 }
 
 /// Draw a debug overlay rectangle with a label for a field.
