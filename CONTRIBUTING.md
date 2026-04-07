@@ -49,7 +49,7 @@ Releases are pushed to pypi visa publish.yml workflow. Use the following command
 ```bash
 uv version --bump patch
 git tag v*.*.*
-git push origin --follow-tags
+git push origin v0.2.2
 ```
 
 ## License
