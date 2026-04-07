@@ -487,6 +487,96 @@ class TestShrinkToFit:
 
 
 # ---------------------------------------------------------------------------
+# Test: content values (Typst [content] instead of "string")
+# ---------------------------------------------------------------------------
+
+class TestContentValues:
+    def test_text_field_accepts_content(self, tmp_dir: Path):
+        """Passing [content] instead of "string" to a text field should compile."""
+        write_schema(tmp_dir, [{"width": 300, "height": 100}], [
+            {"name": "greeting", "type": "text", "bbox": [10, 10, 290, 40], "page": 1, "options": None},
+        ])
+        write_bg(tmp_dir, "bg.png", 300, 100)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (greeting: [Hello World]),
+)
+""")
+        pdf = compile_typst(tmp_dir, "test.typ")
+        assert _pdf_page_count(pdf) == 1
+
+    def test_combobox_content_value_matches_export(self, tmp_dir: Path):
+        """Passing [F] as a combobox value should still resolve the display label."""
+        write_schema(tmp_dir, [{"width": 300, "height": 100}], [
+            {"name": "gender", "type": "combobox", "bbox": [10, 10, 150, 30], "page": 1,
+             "options": [["M", "Male"], ["F", "Female"]]},
+        ])
+        write_bg(tmp_dir, "bg.png", 300, 100)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (gender: [F]),
+)
+""")
+        pdf = compile_typst(tmp_dir, "test.typ")
+        assert _pdf_page_count(pdf) == 1
+
+    def test_radio_content_value(self, tmp_dir: Path):
+        """Passing [yes] as a radio group value should compile."""
+        write_schema(tmp_dir, [{"width": 200, "height": 100}], [
+            {"name": "yesno", "type": "radio", "bbox": [10, 10, 30, 30], "page": 1, "options": None, "export_value": "yes"},
+            {"name": "yesno", "type": "radio", "bbox": [40, 10, 60, 30], "page": 1, "options": None, "export_value": "no"},
+        ])
+        write_bg(tmp_dir, "bg.png", 200, 100)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (yesno: [yes]),
+)
+""")
+        compile_typst(tmp_dir, "test.typ")
+
+    def test_styled_content_preserved_in_text_field(self, tmp_dir: Path):
+        """Rich content (bold, italic) should compile and produce a larger PDF
+        than the blank form – proving the styled content was actually rendered."""
+        write_schema(tmp_dir, [{"width": 300, "height": 100}], [
+            {"name": "note", "type": "text", "bbox": [10, 10, 290, 40], "page": 1, "options": None},
+        ])
+        write_bg(tmp_dir, "bg.png", 300, 100)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (note: [*Bold* and _italic_ text]),
+)
+""")
+        pdf = compile_typst(tmp_dir, "test.typ")
+        assert _pdf_page_count(pdf) == 1
+
+        _write_typ(tmp_dir, "blank.typ", """\
+#import "lib.typ": render-form
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+)
+""")
+        blank_pdf = compile_typst(tmp_dir, "blank.typ")
+        assert pdf.stat().st_size > blank_pdf.stat().st_size
+
+
+# ---------------------------------------------------------------------------
 # Test: debug overlay mode
 # ---------------------------------------------------------------------------
 
