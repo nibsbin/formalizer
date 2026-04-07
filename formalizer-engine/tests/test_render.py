@@ -546,6 +546,35 @@ class TestContentValues:
 """)
         compile_typst(tmp_dir, "test.typ")
 
+    def test_styled_content_preserved_in_text_field(self, tmp_dir: Path):
+        """Rich content (bold, italic) should compile and produce a larger PDF
+        than the blank form – proving the styled content was actually rendered."""
+        write_schema(tmp_dir, [{"width": 300, "height": 100}], [
+            {"name": "note", "type": "text", "bbox": [10, 10, 290, 40], "page": 1, "options": None},
+        ])
+        write_bg(tmp_dir, "bg.png", 300, 100)
+        _write_typ(tmp_dir, "test.typ", """\
+#import "lib.typ": render-form
+
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+  values: (note: [*Bold* and _italic_ text]),
+)
+""")
+        pdf = compile_typst(tmp_dir, "test.typ")
+        assert _pdf_page_count(pdf) == 1
+
+        _write_typ(tmp_dir, "blank.typ", """\
+#import "lib.typ": render-form
+#render-form(
+  schema: json("FIELDS.json"),
+  backgrounds: ("bg.png",),
+)
+""")
+        blank_pdf = compile_typst(tmp_dir, "blank.typ")
+        assert pdf.stat().st_size > blank_pdf.stat().st_size
+
 
 # ---------------------------------------------------------------------------
 # Test: debug overlay mode

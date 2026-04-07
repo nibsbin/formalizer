@@ -27,9 +27,11 @@
 
 /// Should this field shrink text to a single line rather than word-wrap?
 /// True for short/narrow fields with brief content (grades, ranks, dates).
+/// `display` may be a string or content; char-count is skipped for content.
 #let should-shrink-to-fit(display, width, height) = {
   let aspect = width / height
-  let char-count = display.len()
+  // content has no .len(); treat as "long" so only the dimension conditions apply
+  let char-count = if type(display) == str { display.len() } else { 99 }
   char-count <= 10 or height < 20pt or aspect > 4.0
 }
 
@@ -99,8 +101,14 @@
 /// - field (dictionary): raw field entry from the schema
 #let render-field(field-type, value, width, height, field) = {
   if field-type == "text" {
-    if value != none and to-str(value) != "" {
-      render-text-field(to-str(value), width, height, 1.5pt, 1pt)
+    if value != none {
+      // Pass content through directly so styling (bold, italic, …) is preserved;
+      // for plain strings, skip empty values.
+      if type(value) == content {
+        render-text-field(value, width, height, 1.5pt, 1pt)
+      } else if str(value) != "" {
+        render-text-field(str(value), width, height, 1.5pt, 1pt)
+      }
     }
   } else if field-type == "checkbox" {
     if value == true {
@@ -122,8 +130,9 @@
       )
     }
   } else if field-type == "combobox" or field-type == "listbox" {
-    let display = if value != none { to-str(value) } else { "" }
-    // Resolve export value → display label when options are present
+    // Default: render the raw value, preserving content styling if present.
+    // Override with the schema's display label when the export value matches.
+    let display = value
     if field.at("options", default: none) != none and value != none {
       for opt in field.options {
         if str(opt.at(0)) == to-str(value) {
@@ -131,7 +140,7 @@
         }
       }
     }
-    if display != "" {
+    if display != none and to-str(display) != "" {
       render-text-field(display, width, height, 2pt, 1pt)
     }
   }
