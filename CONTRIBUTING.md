@@ -42,6 +42,16 @@ tests/                # pytest suite
 3. Ensure `uv run pytest tests/ -v` passes.
 4. Open a pull request with a clear description of what and why.
 
+## Release
+
+Releases are pushed to pypi visa publish.yml workflow. Use the following commands locally to trigger:
+
+```bash
+uv version --bump patch
+git tag v*.*.*
+git push origin --follow-tags
+```
+
 ## License
 
 By contributing you agree that your contributions will be licensed under the [Apache 2.0](LICENSE) license.
