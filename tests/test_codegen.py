@@ -110,7 +110,8 @@ class TestCodegen:
         (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
         codegen(schema, tmp_path, "pkg")
         form = (tmp_path / "form.typ").read_text()
-        assert form.count("choice:") == 2  # one in params, one in values dict
+        assert form.count("choice: none") == 1  # single deduplicated param
+        assert '"choice": choice' in form  # values key = exact schema name
 
     def test_example_typ_imports_form(self, tmp_path: Path):
         schema = _minimal_schema()
@@ -171,8 +172,22 @@ class TestCodegen:
         form = (tmp_path / "form.typ").read_text()
         assert "first_name:" in form
         assert "first_name_2:" in form
+        # Values map keys = exact PDF names (for render-form values.at(field.name))
+        assert '"first-name": first_name' in form
+        assert '"first.name": first_name_2' in form
         # The renamed field should have a comment
         assert 'renamed from "first.name"' in form
+
+    def test_values_map_uses_exact_pdf_field_names(self, tmp_path: Path):
+        """values: keys must match FIELDS.json name strings (spaces, punctuation)."""
+        schema = _minimal_schema(fields=[
+            {"name": "CATEGORY If Applicable", "type": "text", "bbox": [0, 0, 100, 20], "page": 1, "options": None},
+        ])
+        (tmp_path / "FIELDS.json").write_text(json.dumps(schema))
+        codegen(schema, tmp_path, "pkg")
+        form = (tmp_path / "form.typ").read_text()
+        assert "CATEGORY_If_Applicable:" in form  # #let param (sanitised)
+        assert '"CATEGORY If Applicable": CATEGORY_If_Applicable' in form
 
     def test_humanised_dummy_text(self, tmp_path: Path):
         """Gap 8: text dummy values should be humanised, not raw field names."""

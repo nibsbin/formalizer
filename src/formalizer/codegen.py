@@ -166,7 +166,8 @@ def codegen(schema: dict, out: Path, name: str) -> None:
         if ident != _typst_ident(field_name):
             comment += f'  // renamed from "{field_name}"'
         params.append(f"  {ident}: {default},  {comment}")
-        values_entries.append(f"    {ident}: {ident}")
+        # Keys must match schema field.name (PDF names); render-form uses values.at(field.name).
+        values_entries.append(f"    {_quote(field_name)}: {ident}")
 
     params_block = "\n".join(params)
     values_block = ",\n".join(values_entries)
